@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#17152b"><meta name="description" content="All Social Booster - aplikasi uji coba pribadi">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg">
+<title>All Social Booster</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div><div class="brand">✦ ALL SOCIAL BOOSTER</div><small>Personal test edition</small></div><button id="installBtn" class="install hidden">Pasang</button></header>
+<main>
+<section class="welcome"><div><p class="muted">DASHBOARD PRIBADI</p><h1>Halo! 👋</h1><p class="muted">Pantau dan kembangkan akun sosialmu.</p></div><div class="avatar">AS</div></section>
+<section class="stats"><article><span>Total poin</span><strong id="points">0</strong></article><article><span>Akun tersimpan</span><strong id="accountCount">0</strong></article><article><span>Misi selesai</span><strong id="missionCount">0</strong></article></section>
+<nav class="tabs"><button class="tab active" data-tab="home">Beranda</button><button class="tab" data-tab="accounts">Akun</button><button class="tab" data-tab="missions">Misi</button><button class="tab" data-tab="stats">Statistik</button></nav>
+<section id="home" class="panel active">
+ <div class="section-head"><h2>Akun sosial saya</h2><button class="text-btn" data-goto="accounts">Kelola →</button></div>
+ <div id="homeAccounts" class="account-grid"></div>
+ <div class="section-head"><h2>Aktivitas terbaru</h2></div><div id="recent" class="card empty">Belum ada aktivitas. Mulai dengan menambahkan akun atau menyelesaikan misi.</div>
+ <div class="notice">ℹ️ Versi uji coba ini tidak menambah follower secara otomatis. Gunakan untuk mencatat perkembangan dan mengelola promosi secara aman.</div>
+</section>
+<section id="accounts" class="panel">
+ <h2>Akun media sosial</h2><p class="muted">Simpan tautan profil milik sendiri. Tidak perlu memasukkan password.</p>
+ <form id="accountForm" class="card form">
+  <label>Platform<select id="platform"><option>TikTok</option><option>Instagram</option><option>Shopee</option><option>Tokopedia</option><option>Facebook</option></select></label>
+  <label>Nama akun<input id="handle" placeholder="@namaakun" required></label>
+  <label>Link profil<input id="url" type="url" placeholder="https://..." required></label>
+  <label>Jumlah follower/pengikut saat ini<input id="followers" type="number" min="0" value="0" required></label>
+  <button class="primary">Simpan akun</button>
+ </form><div id="accountList" class="stack"></div>
+</section>
+<section id="missions" class="panel">
+ <h2>Misi promosi pribadi</h2><p class="muted">Checklist aktivitas pemasaran. Poin hanya simulasi lokal untuk uji coba.</p>
+ <div id="missionList" class="stack"></div>
+</section>
+<section id="stats" class="panel">
+ <h2>Catatan perkembangan</h2><p class="muted">Perbarui angka follower secara manual dari aplikasi masing-masing.</p>
+ <form id="snapshotForm" class="card form"><label>Pilih akun<select id="snapshotAccount"></select></label><label>Jumlah follower terbaru<input id="snapshotFollowers" type="number" min="0" required></label><button class="primary">Simpan perkembangan</button></form>
+ <div id="statsList" class="stack"></div>
+</section>
+</main>
+<footer>All Social Booster · Uji coba pribadi · Data tersimpan di perangkat</footer>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body></html>
