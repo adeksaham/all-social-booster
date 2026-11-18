@@ -1,27 +1,30 @@
-# All Social Booster — Android Test (PWA)
+# All Social Booster v2 — PWA Android
 
-Versi uji coba pribadi, gratis, tanpa akun backend. Aplikasi menyimpan data pada browser/perangkat menggunakan localStorage.
+Aplikasi gratis untuk membantu strategi pertumbuhan organik TikTok, Instagram, Facebook, Shopee, dan Tokopedia. Dapat dipasang dari Chrome Android melalui GitHub Pages.
 
-## Cara menjalankan untuk dipasang di Android
-PWA perlu disajikan melalui HTTPS. Cara gratis:
-1. Buat akun GitHub jika belum punya.
-2. Buat repository baru, misalnya `all-social-booster`.
-3. Unggah semua file dalam folder ini ke root repository.
-4. Buka Settings → Pages → Deploy from a branch → pilih `main` dan `/ (root)` → Save.
-5. Setelah GitHub Pages aktif, buka URL HTTPS repository dari Chrome Android.
-6. Tekan menu ⋮ → Install app atau Tambahkan ke layar utama.
+## Fitur v2
+- Dashboard jumlah pengikut dan likes dari akun yang dicatat.
+- Kelola lima platform, simpan tautan profil, dan angka awal.
+- Misi pertumbuhan organik dengan poin motivasi lokal (bukan hadiah/like/follower).
+- Studio draft caption dan hashtag berdasarkan topik.
+- Catatan performa: pengikut, likes, jangkauan/views, komentar, serta target mingguan.
+- Ekspor cadangan data JSON.
+- PWA dan cache offline dasar.
+- Pratinjau konsep komunitas publik.
 
-## Fitur
-- Simpan tautan profil lima platform.
-- Catat jumlah follower secara manual.
-- Checklist misi promosi dan poin simulasi.
-- Catatan perkembangan follower.
-- Data lokal di perangkat.
+## Perbarui GitHub Pages
+1. Buka repository `all-social-booster`.
+2. Unggah seluruh file dari folder ini ke root repository.
+3. Pilih **Commit changes** dan pastikan file lama diganti.
+4. Tunggu GitHub Pages memperbarui situs.
+5. Di Android, buka situs di Chrome. Jika masih tampilan lama, tutup aplikasi, buka Chrome > Pengaturan > Setelan situs > Penyimpanan > hapus data situs, lalu buka kembali URL. **Catatan: tindakan ini menghapus data lokal versi lama; ekspor/cadangkan data sebelum melakukannya.**
 
-## Batasan penting
-- Ini prototipe pribadi, bukan layanan follower otomatis.
-- Poin misi hanya simulasi dan tidak memiliki nilai uang.
-- Tidak ada integrasi API resmi, login sosial, pembayaran, atau sinkronisasi cloud.
-- Jangan masukkan password atau token media sosial.
-- Data tersimpan di browser/perangkat. Membersihkan data browser dapat menghapus data aplikasi.
-- Untuk versi publik/multi-pengguna dibutuhkan backend, autentikasi, keamanan, dan moderasi.
+## Batasan
+- Tidak ada bot, auto-follow, auto-like, spam komentar, atau jaminan pertambahan follower.
+- Data disimpan di perangkat/browser yang digunakan. Belum ada sinkronisasi cloud atau akun pengguna.
+- Mode komunitas adalah pratinjau UI, belum menghubungkan pengguna publik secara real-time.
+- Draft caption/hashtag adalah saran awal yang perlu diedit dan diperiksa.
+- Tidak meminta password, OTP, token, atau akses login akun media sosial.
+
+## Tahap berikutnya untuk versi publik
+Backend gratis/hemat, autentikasi, database bersama, profil kreator, pencarian dan moderasi, laporan/penanganan penyalahgunaan, kebijakan privasi, dan pengujian keamanan. Integrasi API resmi tiap platform hanya bila memenuhi persyaratan dan memperoleh izin.

@@ -1,17 +1,1 @@
-{
-  "name": "All Social Booster",
-  "short_name": "Social Booster",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#f5f4fa",
-  "theme_color": "#17152b",
-  "description": "Aplikasi uji coba pribadi untuk mengelola akun sosial media",
-  "icons": [
-    {
-      "src": "icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    }
-  ]
-}
+{"name":"All Social Booster","short_name":"Social Booster","description":"Teman pertumbuhan media sosial secara organik","start_url":"./","scope":"./","display":"standalone","background_color":"#f6f5fa","theme_color":"#17152b","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
